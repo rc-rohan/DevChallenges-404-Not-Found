@@ -1,0 +1,20 @@
+{
+  "name": "DevChallenges.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:404-not-found-master": "npm --prefix 404-not-found-master run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rc-rohan/DevChallenges.io-Projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rc-rohan/DevChallenges.io-Projects/issues"
+  },
+  "homepage": "https://github.com/rc-rohan/DevChallenges.io-Projects#readme"
+}
