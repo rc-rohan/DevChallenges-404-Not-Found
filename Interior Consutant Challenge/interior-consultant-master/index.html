@@ -6,7 +6,7 @@
     <title>Modern Interior Design</title>
     <!-- google fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lora:ital,wght@0,500;1,400&family=Montserrat:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400&family=Lora&family=Montserrat:wght@300;400&display=swap"
         rel="stylesheet">
     <!-- Css file -->
     <link rel="stylesheet" href="style.css">
@@ -15,41 +15,50 @@
     <main>
         <!-- !Check that the nav should be used or header tag os correct according to seo -->
        <div class="container">
-            <nav>
+            <nav class="main-nav">
                 <div class="logo">
                     <h1>This Interior</h1>
                 </div>
-                <ul class="navigation-links">
-                    <li>Home</li>
-                    <li>Collection</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
+                <div class="hamburger-menu">
+                    <small class="cancel-btn">&#10005;</small>
+                    <div class="menu-icon">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </div>
+                    <ul class="navigation-links">
+                        <li>Home</li>
+                        <li>Collection</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
             </nav>
             <div class="hero-content">
-                <h1 class="heading">Modern interior</h1>
-                <div class="">
+                <div class="description">
+                    <h1 class="tagline">Modern interior</h1>
                     <p>
                         A full-Service residential & commercial interior design and staging company offering professional organizing &
                         eco-services.
                     </p>
-                    <a href="#">Read more</a>
+                    <a href="#">Read more &nbsp;&rarr;</a>
                 </div>
-                <div class="hero-pic">
+                <div class="hero-image">
                     <div class="image-area"><img src="./photo1.png" alt="Home Interior Design"></div>
                     <div class="designer-details">
-                        <div class="designer-image">
-                            <div class="image-area"><img src="./photo2.png" alt="Desinger Pic"></div>
-                            <span>
-                                <strong>Aliza Webber</strong>
+                        <div class="image-area">
+                            <img src="./photo2.png" alt="Desinger Pic">
+                            <span class="name">
+                                <strong >Aliza Webber</strong>
                                 <small>Interior designer</small>
                             </span>
                         </div>
-                        <h4>Designed in 2020 by Aliza Webber</h4>
+                        <h4 >Designed in 2020 by Aliza Webber</h4>
                     </div>
                 </div>
             </div>
        </div>
+       <span class="bottom-line"></span>
        <footer>Rohan @ DevChallenges.io</footer>
     </main>
 
