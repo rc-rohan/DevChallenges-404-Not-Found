@@ -95,10 +95,11 @@ body {
   font-weight: 300;
   font-size: 3.2rem;
 }
+
 .hero-content .description p{
+  width: 24rem;
   margin: 2rem 0;
   font-size: 1.2rem;
-  width: 24rem;
   line-height: 1.8rem;
 }
 .hero-content .description a{
@@ -116,7 +117,7 @@ body {
 .hero-image .designer-details{
   position: absolute;
   top: 75%;
-  right: 3%;
+  left: 7%;
   width: 22rem;
   height: 10rem;
   background: #181719;
@@ -186,17 +187,22 @@ footer{
   .hero-content .description{
     margin-top:4rem ;
   }
+  .hero-content .description{
+    width: 30rem;
+  }
   .hero-content .description p{
     font-size: 1.6rem;
   }
 
   .hero-content .hero-image >.image-area{
-    width: 60rem;
+    width: 70rem;
+    padding:0 2rem;
   }
   .hero-content .designer-details{
     width: 28rem;
     height: 11rem;
-    top: 80%; 
+    top: calc(100% - 9rem);
+    left: calc(100% - 36rem);
     padding: 1.5rem 2rem;
   }
   .hero-content .designer-details h4{
