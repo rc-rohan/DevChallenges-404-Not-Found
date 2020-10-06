@@ -1,0 +1,238 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 75%;
+  margin: 4rem auto;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.list {
+  list-style: none;
+}
+
+.primary-heading {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+.showcase h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+}
+
+.showcase__description {
+  margin: 2rem 0;
+  font-size: 2px;
+  max-width: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.showcase__description__menu-icon {
+  padding-top: 0.3rem;
+}
+
+.showcase__description__text {
+  max-width: 95%;
+  font-style: italic;
+}
+
+.showcase .image-area {
+  height: 38rem;
+}
+
+.ingredients {
+  margin: 5rem 0 2rem;
+}
+
+.ingredients .flex-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.ingredients__serving {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-box-shadow: 0 .2rem 2rem -0.2rem #d0d3d4;
+          box-shadow: 0 .2rem 2rem -0.2rem #d0d3d4;
+  border-radius: 0.5rem;
+  width: 30rem;
+  height: 30rem;
+  padding: 2rem;
+}
+
+.ingredients__serving__detail {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.ingredients__serving__detail__img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.5rem;
+}
+
+.ingredients__serving__detail span {
+  width: 70%;
+}
+
+.ingredients__serving__detail__property-name {
+  color: #BDBDBD;
+  display: block;
+}
+
+.ingredients .recipe {
+  max-width: 75%;
+}
+
+.ingredients .recipe__name {
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.ingredients .recipe__ingredient-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem 0;
+  font-size: 1.4rem;
+}
+
+.ingredients .recipe__ingredient-lists input {
+  width: 2rem;
+  height: 2rem;
+}
+
+.ingredients .recipe__ingredient-lists__description {
+  width: 90%;
+  margin-left: 2rem;
+}
+
+.instructions {
+  max-width: 65%;
+}
+
+.instructions .primary-heading {
+  margin-bottom: 2rem;
+}
+
+.instructions__list {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.instructions__list__number {
+  background: #F2994A;
+  border-radius: .5rem;
+  padding: 0 1.4rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #fff;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.instructions__list__description {
+  width: 90%;
+  margin-left: 2rem;
+}
+
+.instructions__list:last-child {
+  color: #BDBDBD;
+}
+
+.instructions__list__link {
+  color: #BDBDBD;
+  margin-left: 1rem;
+}
+
+.footer {
+  text-align: center;
+  color: #BDBDBD;
+}
+
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .showcase .image-area {
+    height: 30rem;
+  }
+  .ingredients .flex-items {
+    display: block;
+  }
+  .ingredients__serving {
+    width: 100%;
+    height: 18rem;
+    -webkit-box-shadow: initial;
+            box-shadow: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ingredients__recipe .recipe {
+    max-width: 100%;
+  }
+  .instructions {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

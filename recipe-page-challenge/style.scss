@@ -1,0 +1,199 @@
+$font2: "Playfair Display", serif;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+*/
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    max-width: 75%;
+    margin: 4rem auto;
+}
+.image {
+    width: 100%;
+    height: 100%;
+}
+.list {
+    list-style: none;
+}
+.primary-heading {
+    font-size: 2rem;
+    font-family: $font2;
+}
+.showcase {
+    h1 {
+        font-family: $font2;
+        font-size: 3.5rem;
+    }
+    &__description {
+        margin: 2rem 0;
+        font-size: 2px;
+        max-width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &__menu-icon {
+            padding-top: 0.3rem;
+        }
+        &__text {
+            max-width: 95%;
+            font-style: italic;
+        }
+    }
+    .image-area {
+        // max-width: 80%;
+        height: 38rem;
+    }
+}
+
+.ingredients {
+    margin: 5rem 0 2rem;
+
+    .flex-items {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
+    &__serving {
+        order: 2;
+        box-shadow: 0 .2rem 2rem -0.2rem #d0d3d4;
+        border-radius: 0.5rem;
+        width: 30rem;
+        height: 30rem;
+        padding: 2rem;
+
+        &__detail{
+            padding: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+
+            &__img{
+                width: 3rem;
+                height: 3rem;
+                margin-right: 1.5rem;
+            }
+            & span{
+                width: 70%;
+            }
+            &__property-name{
+                color: #BDBDBD;
+                display: block;
+            }
+
+        }
+    }
+
+    .recipe {
+        max-width: 75%;
+        &__name {
+            font-style: italic;
+            font-family: $font2;
+            font-size: 1.6rem;
+            // margin-bottom: 1rem;
+            display: inline-block;
+        }
+        &__ingredient-lists  {
+            display: flex;
+            align-items: flex-start;
+            margin: 2rem 0;
+            font-size: 1.4rem;
+
+            input {
+                width: 2rem;
+                height: 2rem;
+            }
+            &__description{
+                width: 90%;
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+.instructions{
+    max-width: 65%;
+    .primary-heading{
+        margin-bottom: 2rem;
+    }
+    &__list{
+        margin: 2rem 0;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+
+        &__number{
+            background: #F2994A;
+            border-radius:.5rem ;
+            padding:0 1.4rem ;
+            font-family: $font2;
+            font-size: 2rem;
+            color: #fff;
+            width: 3.5rem;
+            height: 3.5rem;
+
+        }
+        &__description{
+            width: 90%;
+            margin-left: 2rem;
+        }
+        &:last-child{
+            color: #BDBDBD;
+        }
+        &__link{
+            color: #BDBDBD;
+            margin-left: 1rem;
+        }
+    }
+}
+.footer{
+    text-align: center;
+    color: #BDBDBD;
+}
+
+@media only screen and (max-width: 425px){
+    body{
+    }
+    html{
+        font-size: 50%;
+    }
+    .container{
+        // max-width: calc(100% - 2rem);
+        max-width: 90%;
+    }
+    .showcase .image-area{
+        height: 30rem;
+    }
+
+    .ingredients {
+        .flex-items{
+
+            display: block;
+        }
+
+        &__serving{
+            width: 100%;
+            height:18rem;
+            box-shadow: initial;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__recipe .recipe{
+            max-width: 100%;
+        }
+    }
+    .instructions{
+        max-width: 100%;
+    }
+}
