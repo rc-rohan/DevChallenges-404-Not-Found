@@ -1,0 +1,218 @@
+$primaryColor: #333333;
+$secondaryColor: #4f4f4f;
+$borderColor: #828282;
+*,
+*:after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: $primaryColor;
+    max-width: 75%;
+    margin: auto;
+}
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+}
+input:active,
+input:focus {
+    outline: none;
+}
+.material-icons {
+    color: $borderColor;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.main-header {
+    margin: 3rem 0;
+    font-size: 1.6rem;
+    color: #4e5150;
+}
+.product-desc {
+    order: 2;
+    width: 34rem;
+    height: 48rem;
+    background: #f2f2f2;
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+
+    .product {
+        display: flex;
+        padding-bottom: 2rem;
+
+        &__img {
+            width: 13rem;
+        }
+
+        &__detail {
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            font-size: 1.3rem;
+        }
+
+        &__price-detail {
+            padding: 1rem 0;
+        }
+        &__actual-price {
+            color: #f2994a;
+            font-size: 1.4rem;
+        }
+        &__prev-price {
+            text-decoration: line-through;
+            padding-left: 0.5rem;
+        }
+
+        &__qty {
+            margin-top: 3.5rem;
+            border: 1px solid $borderColor;
+            border-radius: 1rem;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .material-icons {
+                background: #e0e0e0;
+                font-size: 1.8rem;
+                border-radius: 0.2rem;
+            }
+        }
+
+        &-amt {
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 1rem;
+            &__desc {
+                padding: 1rem 0;
+                border-top: 1px solid $borderColor;
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+.user-details {
+    width: 45rem;
+
+    label {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        color: #4f4f44;
+    }
+    .input-field {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border: 1px solid $borderColor;
+        border-radius: 0.8rem;
+        display: flex;
+        justify-content: flex-start;
+
+        .material-icons {
+            width: 7%;
+        }
+        input {
+            width: 93%;
+            border: none;
+        }
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+    &__contact-info {
+        label {
+            margin-top: 1rem;
+        }
+    }
+
+    &__shipping-info {
+        margin-top: 4rem;
+
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+        }
+
+        .country-desc {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            div:first-child {
+                margin-right: 2rem;
+            }
+            .input-field {
+                justify-content: space-between;
+
+                input {
+                    width: 70%;
+                }
+            }
+        }
+        .save-information {
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+
+            input {
+                margin-right: 2rem;
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        .btn-light {
+            margin-top: 2rem;
+            float: right;
+            padding: 1.5rem 3rem;
+            background: #f2994a;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: 0.2rem;
+        }
+    }
+}
+footer {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+@media only screen and (max-width: 425px) {
+    body{
+        max-width: calc(100% - 50px);
+    }
+    .container{
+        flex-direction: column;
+    }
+    .product-desc {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .user-details{
+        order: 2;
+        width: 100%;
+
+    }
+}

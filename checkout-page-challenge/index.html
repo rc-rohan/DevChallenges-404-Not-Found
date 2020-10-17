@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout Page</title>
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Material Icons -->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header class="main-header">
+            <h1>Checkout</h1>
+        </header>
+        <main class="container">
+            <section class="product-desc">
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./img/photo1.png" alt="" />
+                    </div>
+                    <div class="product__detail">
+                        <strong class="product__name">Vintage Backbag</strong>
+                        <span class="product__price-detail">
+                            <strong class="product__actual-price"
+                                >$54.99</strong
+                            >
+                            <strong class="product__prev-price">$94.99</strong>
+                        </span>
+                        <span class="product__qty">
+                            <span class="material-icons"> add </span>
+                            <strong class="qty__value">1</strong>
+                            <span class="material-icons"> remove </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product__img">
+                        <img src="./img/photo2.png" alt="" />
+                    </div>
+                    <div class="product__detail">
+                        <strong class="product__name">Levi Shoes</strong>
+                        <span class="product__price-detail">
+                            <strong class="product__actual-price"
+                                >$74.99</strong
+                            >
+                            <strong class="product__prev-price">$124.99</strong>
+                        </span>
+                        <span class="product__qty">
+                            <span class="material-icons"> add </span>
+                            <strong class="qty__value">1</strong>
+                            <span class="material-icons"> remove </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="product-amt">
+                    <span class="product-amt__desc">
+                        <strong>Shipping</strong>
+                        <strong>$19</strong>
+                    </span>
+                    <span class="product-amt__desc">
+                        <strong>Total</strong>
+                        <strong>$148.98</strong>
+                    </span>
+                </div>
+            </section>
+            <section class="user-details">
+                <h3>Contact Information</h3>
+                <div class="user-details__contact-info">
+                    <label for="email">E-mail</label>
+                    <div class="input-field">
+                        <span class="material-icons"> local_post_office </span>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email..."
+                        />
+                    </div>
+                    <label for="phone-number">Phone</label>
+                    <div class="input-field">
+                        <span class="material-icons"> phone </span>
+                        <input
+                            type="number"
+                            id="phone-number"
+                            placeholder="Enter your phone..."
+                        />
+                    </div>
+                </div>
+                <div class="user-details__shipping-info">
+                    <h3>Shipping Address</h3>
+                    <label for="name">Full Name</label>
+                    <div class="input-field">
+                        <span class="material-icons"> local_post_office </span>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name..."
+                        />
+                    </div>
+                    <label for="address">Adderess</label>
+                    <div class="input-field">
+                        <span class="material-icons"> home </span>
+                        <input
+                            type="text"
+                            id="address"
+                            placeholder="Your address..."
+                        />
+                    </div>
+                    <label for="city">Your City</label>
+                    <div class="input-field">
+                        <span class="material-icons"> apartment </span>
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Your city..."
+                        />
+                    </div>
+                    <div class="country-desc">
+                        <div>
+                            <label for="country">Your Country</label>
+                            <div class="input-field">
+                                <span class="material-icons"> public </span>
+                                <input
+                                    type="text"
+                                    id="country"
+                                    placeholder="Your country..."
+                                />
+                                <span class="material-icons">
+                                    keyboard_arrow_down
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="code">Postal Code</label>
+                            <div class="input-field">
+                                <span class="material-icons">
+                                    markunread_mailbox
+                                </span>
+                                <input
+                                    type="text"
+                                    id="code"
+                                    placeholder="Your postal code..."
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save-information">
+                        <input
+                            type="checkbox"
+                            id="code"
+                            placeholder="Your postal code..."
+                        />
+                        <span class="text"> Save the information for the next time </span>
+                    </div>
+                    <button class="btn-light">Continue</button>
+                </div>
+            </section>
+        </main>
+        <footer>Rohan@DevChalenges.io</footer>
+    </body>
+</html>
