@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function Label() {
-    return (
-        <p>
-
-        </p>
-    )
+function Label({ text }) {
+    return <p >{text}</p>;
 }
 
-export default Label
+export default Label;
