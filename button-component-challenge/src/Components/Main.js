@@ -14,8 +14,15 @@ const Main = () => {
                     <Button className="btn--default" btnText="Default" />
                 </div>
                 <div className="btn">
-                    <Label text="&:hover, &:focus" className="hover-focus-state"/>
-                    <Button className="btn--focused" btnText="Default" />
+                    <Label
+                        text="&:hover, &:focus"
+                        style={{ color: "red" }}
+                        className="hover-focus-state"
+                    />
+                    <Button
+                        className="btn--default-focused"
+                        btnText="Default"
+                    />
                 </div>
             </section>
             <section className="btn-details">
@@ -25,7 +32,10 @@ const Main = () => {
                 </div>
                 <div className="btn">
                     <Label text="&:hover, &:focus" />
-                    <Button className="btn--ouline-focused" btnText="Default" />
+                    <Button
+                        className="btn--outline-focused"
+                        btnText="Default"
+                    />
                 </div>
             </section>
             <section className="btn-details">
@@ -51,17 +61,22 @@ const Main = () => {
                 </div>
                 <div className="btn">
                     <Label text="<Button variant=”text” disabled />" />
-                    <Button className="btn--disabled-focused " btnText="Disabled" />
+                    <Button
+                        className="btn--disabled-focused "
+                        btnText="Disabled"
+                    />
                 </div>
             </section>
             <section className="btn-details">
                 <div className="btn">
                     <Label text="<Button startIcon=”local_grocery_store” />" />
-                    <Button className="btn--active" btnText="Default" />
+                    <Button className="btn--grocery-left btn--active" btnText="Default">
+                    </Button>
                 </div>
                 <div className="btn">
                     <Label text="<Button endIcon=”local_grocery_store” />" />
-                    <Button className="btn--active" btnText="Default" />
+                    <Button className="btn--grocery-right btn--active" btnText="Default">
+                    </Button>
                 </div>
             </section>
             <section className="btn-details">
@@ -99,16 +114,22 @@ const Main = () => {
             <section className="btn-details">
                 <div className="btn">
                     <Label text="&:hover, &:focus" />
-                    <Button className="btn--default-focused" btnText="Default" />
+                    <Button
+                        className="btn--default-focused"
+                        btnText="Default"
+                    />
                 </div>
                 <div className="btn">
                     <Button className="btn--active-focused" btnText="Default" />
                 </div>
                 <div className="btn">
-                    <Button className="btn--secondary-focused" btnText="Secondary" />
+                    <Button
+                        className="btn--secondary-focused"
+                        btnText="Secondary"
+                    />
                 </div>
                 <div className="btn">
-                    <Button className="btn--active-focused" btnText="Danger" />
+                    <Button className="btn--danger-focused" btnText="Danger" />
                 </div>
             </section>
         </main>

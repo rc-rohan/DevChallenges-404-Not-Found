@@ -51,7 +51,6 @@ font-family: 'Ubuntu Mono', monospace; */
     }
 }
 
-
 .main {
     header {
         margin: 4rem 0;
@@ -74,14 +73,15 @@ font-family: 'Ubuntu Mono', monospace; */
             margin-right: 5rem;
             p {
                 font-weight: 300;
-                font-family: 'Ubuntu Mono', monospace;
+                font-family: "Ubuntu Mono", monospace;
                 color: #333;
             }
-            .hover-focus-state{
+            .hover-focus-state {
                 color: $primaryColor;
+                color: red;
             }
 
-            Button {
+            button {
                 margin-top: 1rem;
                 padding: 1rem 2rem;
                 border: none;
@@ -93,6 +93,85 @@ font-family: 'Ubuntu Mono', monospace; */
                     outline: none;
                 }
             }
+            .btn--default-focused {
+                background: $secondaryColor;
+            }
+            .btn--outline {
+                background: #fff;
+                color: $btnActiveColor;
+                border: 1px solid $btnActiveColor;
+
+                &-focused {
+                    color: $btnActiveColor;
+                    border: 1px solid $btnActiveColor;
+                    background: rgba($color: #2962ff, $alpha: 0.1);
+                }
+            }
+            .btn--text {
+                background: #fff;
+                color: $btnActiveColor;
+                &-focused {
+                    color: $btnActiveColor;
+                    background: rgba($color: #2962ff, $alpha: 0.1);
+                }
+            }
+            .btn--active {
+                background: $btnActiveColor;
+                color: #fff;
+                &-focused{
+                    background:#3048CB;
+                    color: #fff;
+                }
+            }
+            .btn--disabled {
+                background: #e0e0e0;
+                color: $secondaryColor;
+
+                &-focused {
+                    color: $secondaryColor;
+                    background: #fff;
+                }
+            }
+            .btn--grocery-left:before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f217";
+                padding-right: 0.4rem;
+                display: inline-block;
+            }
+            .btn--grocery-right:after{
+                font-family: "Font Awesome 5 Free";
+                content: "\f217";
+                padding-left: 0.4rem;
+                display: inline-block;
+            }
+            .size-sm{
+                transform: scale(0.8);
+            }
+            .size-md{
+                transform: scale(0.9);
+            }
+            .size-lg{
+                transform: scale(1);
+            }
+            .btn--secondary{
+                background: #455A64;
+                color: #fff;
+
+                &-focused{
+                    color: #fff;
+                    background: #1C313A;
+                }
+            }
+            .btn--danger{
+                background: #D32F2F;
+                color: #fff;
+
+                &-focused{
+                    color: #fff;
+                    background: #9A0007;
+                }
+            }
+
         }
     }
 }
