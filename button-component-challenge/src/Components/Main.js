@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import ThemeContext from "../Context/ThemeContext";
 import Button from "./Button";
 import Label from "./Label";
+import { MainTheme } from "../AppTheme";
 
 const Main = () => {
+    const theme = useContext(ThemeContext)[0];
+    const currentTheme = MainTheme[theme];
+
     return (
-        <main className="main">
+        <main className="main" style={currentTheme}>
             <header>
                 <h1>Buttons</h1>
             </header>
@@ -70,13 +75,17 @@ const Main = () => {
             <section className="btn-details">
                 <div className="btn">
                     <Label text="<Button startIcon=”local_grocery_store” />" />
-                    <Button className="btn--grocery-left btn--active" btnText="Default">
-                    </Button>
+                    <Button
+                        className="btn--grocery-left btn--active"
+                        btnText="Default"
+                    ></Button>
                 </div>
                 <div className="btn">
                     <Label text="<Button endIcon=”local_grocery_store” />" />
-                    <Button className="btn--grocery-right btn--active" btnText="Default">
-                    </Button>
+                    <Button
+                        className="btn--grocery-right btn--active"
+                        btnText="Default"
+                    ></Button>
                 </div>
             </section>
             <section className="btn-details">

@@ -16,11 +16,17 @@ html {
     display: flex;
     font-family: "Noto Sans JP", sans-serif;
 }
-/*
-font-family: 'Poppins', sans-serif;
-font-family: 'Ubuntu Mono', monospace; */
+.themeToggler{
+    display: inline-block;
+    position: absolute;
+    padding: 2rem;
+    right: 10rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+
 .sidebar {
-    margin-right: 6rem;
     width: 20rem;
     background: #fafbfd;
     padding: 2rem 3rem;
@@ -52,6 +58,9 @@ font-family: 'Ubuntu Mono', monospace; */
 }
 
 .main {
+    padding-left: 6rem;
+    padding-right:15rem ;
+    flex: 2;
     header {
         margin: 4rem 0;
         font-family: "Poppins", sans-serif;

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import ThemeContext from "../Context/ThemeContext";
+import {SidebarTheme} from "../AppTheme";
 
 const Sidebar = () => {
+    const theme = useContext(ThemeContext)[0]
+    const currentTheme = SidebarTheme[theme];
     return (
-        <aside className="sidebar">
+        <aside className="sidebar" style={currentTheme}>
             <header>
                 <h4>
                     <span className="primary-text">Dev</span>challenges.io
@@ -14,7 +18,7 @@ const Sidebar = () => {
                 <a href="#">Typograph</a>
                 <a href="#">Spaces</a>
                 <a href="#">Buttons</a>
-                <a href="#" className="selected">
+                <a href="#" className="selected" style={{color:`${currentTheme.selectedColor}`}}>
                     Inputs
                 </a>
                 <a href="#">Grid</a>
