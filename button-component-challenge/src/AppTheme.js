@@ -16,8 +16,8 @@ export const SidebarTheme = {
         backgroundColor: "#fafbfd",
     },
     dark: {
-        selectedColor :"#fff",
+        selectedColor: "#fff",
         color: "#fff",
-        backgroundColor: "#000"
+        backgroundColor: "#232323",
     },
 };
